@@ -1,0 +1,159 @@
+footer {
+    background-color: #191919;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.footer__main {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 37px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__item {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.footer__bottom {
+    padding: 25px;
+    text-align: center;
+
+    p {
+
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+// update
+
+
+.update {
+    padding-bottom: 150px;
+
+    .form__success {
+        margin-bottom: 20px;
+        background-color: #b79460;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: fit-content;
+
+    }
+}
+
+.update__container {
+    display: grid;
+    grid-template-columns: 920px 1fr;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.social--update {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.update__main {
+    form {
+        margin-bottom: 40px;
+        width: 600px;
+        border-bottom: 1px solid #B6B6B6;
+        padding-bottom: 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .error-message {
+            margin-left: 10px;
+            flex-shrink: 0;
+            margin-top: 0;
+        }
+
+        input {
+            width: 413px;
+            height: 36px;
+            border: none;
+            outline: none;
+            color: #fff;
+            background-color: transparent;
+
+            &::placeholder {
+                color: #fff;
+                font-weight: 300;
+                line-height: 36px;
+
+            }
+        }
+
+
+        button {
+            background-color: transparent;
+            border: none;
+            display: flex;
+        }
+    }
+}
+
+.update__right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    gap: 40px;
+}
+
+.update__txt {
+    line-height: 36px;
+}
+
+@media (max-width: 1280px) {
+
+    // update
+    .update__container {
+        grid-template-columns: 100%;
+    }
+
+    .social--update {
+        justify-content: center;
+    }
+    .update{
+        padding-bottom: 50px;
+    }
+
+    .update__right{
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 980px) {
+    .footer__main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__txt {
+        text-align: center;
+    }
+}

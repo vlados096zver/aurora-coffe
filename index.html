@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__container">
+            <button class="header__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__nav-list text-medium">
+                    <li class="header__nav-item"><a href="#about">ABOUT US</a></li>
+                    <li class="header__nav-item"><a href="#catalog">Catalog</a></li>
+                    <li class="header__nav-item"><a href="#services">Services</a></li>
+                </ul>
+            </nav>
+            <div class="header__logo">
+                <a href="#" class="logo logo--header">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__btn">
+                <button class="btn-cta" data-modal="modal_cta">
+                    <span class="text-medium">Contact Us</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__pretitle">
+                    <span class="text-large">NEW COFFEE</span>
+                </div>
+                <h1>Aurora Coffee</h1>
+                <p class="text-xxlarge">
+                    We are excited to introduce a new seasonal coffee to our menu! Our spring blend combines unique
+                    beans from Ethiopia and Honduras, capturing the essence of freshness and warmth, perfect for the
+                    changing season.
+                </p>
+                <div class="hero__bottom">
+                    <img src="./assets/img/circle.png" alt="circle background">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 90 100" fill="none">
+                        <path
+                            d="M44.5 0.5L44.4958 72.9217C44.4958 73.1544 44.6365 73.3655 44.8512 73.4557C45.0676 73.5459 45.3148 73.4972 45.4808 73.3312L49.971 68.841C50.1965 68.6155 50.1965 68.2493 49.971 68.0238C49.7455 67.7982 49.3793 67.7982 49.1538 68.0238L45.6503 71.5272L45.6503 0.5L44.5 0.5Z"
+                            fill="#222222" />
+                        <path
+                            d="M40.0003 68.426C40.0003 68.278 40.0562 68.1301 40.1698 68.0182C40.3954 67.7927 40.7616 67.7927 40.9871 68.0182L45.4827 72.5139C45.7082 72.7394 45.7082 73.1056 45.4827 73.3311C45.2572 73.5566 44.891 73.5566 44.6655 73.3311L40.1698 68.8355C40.0562 68.7218 40.0003 68.5739 40.0003 68.426Z"
+                            fill="#222222" />
+                        <rect x="0.5" y="10.5" width="89" height="89" rx="44.5" stroke="#222222" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="cafe-intro" id="about">
+            <div class="cafe-intro__container container">
+                <h2>
+                    At Aurora Coffee, our experience revolves around offering not only exceptional coffee but also a
+                    warm and inviting cafe atmosphere for our cherished customers
+                </h2>
+                <p class="text-large ">
+                    We carefully source each coffee through transparent and direct relationships with farmers worldwide.
+                    Our team personally selects and roasts every batch to ensure that each cup is crafted to perfection,
+                    made specifically for your enjoyment
+                </p>
+            </div>
+        </section>
+
+        <div class="photo">
+            <div class="photo__container container">
+                <img src="./assets/img/coffe.webp" alt="coffe">
+            </div>
+        </div>
+
+        <section class="product-section" id="catalog">
+            <div class="product__container container">
+                <div class="product__header">
+                    <h2>All Coffee</h2>
+                    <p class="text-large">
+                        Aurora Coffee carefully selects and samples only the finest batches for our roastery, where each
+                        is meticulously crafted for your ultimate enjoyment
+                    </p>
+                    <div class="product__header-filters">
+                        <button class="btn-cta btn-cta__black btn-cta--active" data-category="all">
+                            <span class="text-medium">All</span>
+                        </button>
+                        <button class="btn-cta btn-cta__black" data-category="bestsellers">
+                            <span class="text-medium">Bestsellers</span>
+                        </button>
+                        <button class="btn-cta btn-cta__black" data-category="sour">
+                            <span class="text-medium">Sour</span>
+                        </button>
+                        <button class="btn-cta btn-cta__black" data-category="bitter">
+                            <span class="text-medium">Bitter</span>
+                        </button>
+                        <button class="btn-cta btn-cta__black" data-category="sweet">
+                            <span class="text-medium">Sweet</span>
+                        </button>
+                        <button class="btn-cta btn-cta__black" data-category="spicy">
+                            <span class="text-medium">Spicy</span>
+                        </button>
+                        <button class="btn-cta btn-cta__black" data-category="fruity">
+                            <span class="text-medium">Fruity</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="product__list">
+                    <div class="product__item" data-category="bestsellers">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Kona (Hawaii)</h4>
+                        <p class="text-large">
+                            A smooth, balanced coffee with soft acidity and mild sweetness. Perfect for those who
+                            enjoy a refined, mellow cup
+                        </p>
+                    </div>
+                    <div class="product__item" data-category="bestsellers">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Kona (Hawaii)</h4>
+                        <p class="text-large">
+                            A smooth, balanced coffee with soft acidity and mild sweetness. Perfect for those who
+                            enjoy a refined, mellow cup
+                        </p>
+                    </div>
+                    <div class="product__item" data-category="sour">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Sour Coffee Blend</h4>
+                        <p class="text-large">
+                            A lively and tangy coffee experience, perfect for sour coffee lovers.
+                        </p>
+                    </div>
+                    <div class="product__item" data-category="bitter">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Bitter Dark Roast</h4>
+                        <p class="text-large">
+                            A rich and bold coffee with strong bitter notes, great for those who enjoy a kick.
+                        </p>
+                    </div>
+                    <div class="product__item" data-category="sweet">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Sweet Caramel Blend</h4>
+                        <p class="text-large">
+                            A sweet and creamy coffee experience with hints of caramel.
+                        </p>
+                    </div>
+                    <div class="product__item" data-category="spicy">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Spicy Mocha</h4>
+                        <p class="text-large">
+                            A spicy coffee blend with rich chocolate notes, perfect for a kick.
+                        </p>
+                    </div>
+                    <div class="product__item" data-category="fruity">
+                        <div class="product__photo">
+                            <img src="./assets/img/product.webp" alt="product">
+                        </div>
+                        <h4 class="text-xlarge">Fruity Espresso</h4>
+                        <p class="text-large">
+                            A fruity espresso blend with vibrant flavors, ideal for fruit lovers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coffee-offers" id="services">
+            <div class="coffee-offers__container container">
+                <div class="coffee-offers__item">
+                    <div class="coffee-offers__photo">
+                        <img src="./assets/img/coffe-offers-1.webp" alt="Photo Coffe">
+                    </div>
+
+                    <div class="coffee-offers__description">
+                        <span class="coffee-offers__category text-large">Our coffee</span>
+                        <h2>Always-on Coffee Blends</h2>
+                        <p class="coffee-offers__subtitle text-large">
+                            Our selection of always-available coffee ensures that your go-to blend is ready whenever you
+                            need it. Choose from Bolt, Eureka, Day Dream, Friction, and Placebo
+                        </p>
+                        <button class="btn-cta btn-cta__black" data-modal="modal_cta">
+                            <span class="text-medium">Order Now</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="coffee-offers__item">
+                    <div class="coffee-offers__description">
+                        <span class="coffee-offers__category text-large">Subscription</span>
+                        <h2>Aurora Coffee Subscription</h2>
+                        <p class="coffee-offers__subtitle text-large">
+                            Experience the convenience of fresh, curated coffee delivered directly to your door. Our
+                            subscription offers exclusive access to a variety of premium blends, ensuring you always
+                            have the perfect cup ready. Enjoy a seamless, tailored coffee experience that fits your
+                            lifestyle
+                        </p>
+                        <button class="btn-cta btn-cta__black" data-modal="modal_cta">
+                            <span class="text-medium">Order Now</span>
+                        </button>
+                    </div>
+                    <div class="coffee-offers__photo">
+                        <img src="./assets/img/coffe-offers-2.webp" alt="Photo Coffe">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="review__container container">
+                <div class="review__photo">
+                    <img src="./assets/img/slider.webp" alt="slider photo">
+                </div>
+                <div class="swiper review__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review__rating">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                            </div>
+                            <h2>Aurora Coffee</h2>
+                            <div class="review__author">
+                                <span class="review__author-name text-xlarge">Emma Johnson</span>
+                                <span class="review__author-location text-large">New York, USA</span>
+                            </div>
+                            <p class="review__text text-large">
+                                Aurora Coffee has completely transformed my mornings. The quality of their beans is
+                                unmatched, and every cup is a burst of flavor. I can't imagine starting my day without
+                                it!
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review__rating">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                                <img src="./assets/img/star.svg" alt="star icon">
+                            </div>
+                            <h2>Aurora Coffee</h2>
+                            <div class="review__author">
+                                <span class="review__author-name text-xlarge">Emma Johnson</span>
+                                <span class="review__author-location text-large">New York, USA</span>
+                            </div>
+                            <p class="review__text text-large">
+                                Aurora Coffee has completely transformed my mornings. The quality of their beans is
+                                unmatched, and every cup is a burst of flavor. I can't imagine starting my day without
+                                it!
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="review__slider-btns">
+                        <button class="review-btn review-btn--prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <path
+                                    d="M38.4419 28.1539H25.2814L28.2831 25.1521C28.6295 24.8059 28.8241 24.3364 28.8242 23.8467C28.8243 23.357 28.6299 22.8874 28.2838 22.5411C27.9376 22.1947 27.468 22.0001 26.9784 22C26.4887 21.9999 26.0191 22.1943 25.6727 22.5405L21.2593 26.9539C20.4529 27.7625 20 28.858 20 30C20 31.142 20.4529 32.2375 21.2593 33.0461L25.6727 37.4595C26.0191 37.8057 26.4887 38.0001 26.9784 38C27.468 37.9999 27.9376 37.8053 28.2838 37.4589C28.6299 37.1126 28.8243 36.643 28.8242 36.1533C28.8241 35.6636 28.6295 35.1941 28.2831 34.8479L25.2814 31.8461L38.4419 31.8461C38.9315 31.8461 39.4011 31.6516 39.7473 31.3054C40.0935 30.9592 40.288 30.4896 40.288 30C40.288 29.5104 40.0935 29.0408 39.7473 28.6946C39.4011 28.3484 38.9315 28.1539 38.4419 28.1539Z"
+                                    fill="#010101" fill-opacity="0.3" />
+                                <path
+                                    d="M2.05448 40.9109C4.57878 47.3763 9.26675 52.7663 15.3196 56.1627C21.3725 59.5591 28.4158 60.7516 35.2494 59.5372C42.0829 58.3227 48.284 54.7764 52.796 49.5024C57.308 44.2284 59.8517 37.5531 59.9937 30.6139C60.1358 23.6747 57.8673 16.9009 53.5749 11.4468C49.2825 5.99257 43.2318 2.19545 36.4536 0.702374C29.6754 -0.790703 22.5893 0.112644 16.4025 3.2585C10.2157 6.40436 5.3111 11.5981 2.52436 17.9547L3.26538 18.2796C5.97697 12.0944 10.7493 7.04074 16.7692 3.97973C22.7891 0.91872 29.6842 0.0397339 36.2796 1.49254C42.8749 2.94535 48.7625 6.64006 52.9391 11.9471C57.1157 17.2542 59.323 23.8453 59.1848 30.5974C59.0466 37.3494 56.5715 43.8447 52.1812 48.9764C47.7909 54.1081 41.7571 57.5588 35.1078 58.7405C28.4585 59.9222 21.6052 58.7619 15.7156 55.4571C9.82594 52.1523 5.2644 46.9076 2.80819 40.6166L2.05448 40.9109Z"
+                                    fill="#010101" fill-opacity="0.3" />
+                            </svg>
+                        </button>
+                        <button class="review-btn review-btn--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <path
+                                    d="M21.8462 31.8461L35.0067 31.8461L32.0049 34.8479C31.6586 35.1941 31.464 35.6636 31.4639 36.1533C31.4638 36.643 31.6582 37.1126 32.0043 37.4589C32.3505 37.8053 32.82 37.9999 33.3097 38C33.7994 38.0001 34.269 37.8057 34.6154 37.4595L39.0288 33.0461C39.8352 32.2375 40.2881 31.142 40.2881 30C40.2881 28.858 39.8352 27.7625 39.0288 26.9539L34.6154 22.5405C34.269 22.1943 33.7994 21.9999 33.3097 22C32.82 22.0001 32.3505 22.1947 32.0043 22.5411C31.6582 22.8874 31.4638 23.357 31.4639 23.8467C31.464 24.3364 31.6586 24.8059 32.0049 25.1521L35.0067 28.1539L21.8462 28.1539C21.3566 28.1539 20.887 28.3484 20.5408 28.6946C20.1946 29.0408 20.0001 29.5104 20.0001 30C20.0001 30.4896 20.1946 30.9592 20.5408 31.3054C20.887 31.6516 21.3566 31.8461 21.8462 31.8461Z"
+                                    fill="#222222" />
+                                <path
+                                    d="M57.9455 19.0891C55.4212 12.6237 50.7332 7.23368 44.6804 3.8373C38.6275 0.440921 31.5842 -0.751634 24.7506 0.462833C17.9171 1.6773 11.716 5.22365 7.20401 10.4976C2.69203 15.7716 0.148316 22.4469 0.00628231 29.3861C-0.135752 36.3253 2.13268 43.0991 6.42508 48.5532C10.7175 54.0074 16.7682 57.8046 23.5464 59.2976C30.3246 60.7907 37.4107 59.8874 43.5975 56.7415C49.7843 53.5956 54.6889 48.4019 57.4756 42.0453L56.7346 41.7204C54.023 47.9056 49.2507 52.9593 43.2308 56.0203C37.2109 59.0813 30.3158 59.9603 23.7204 58.5075C17.1251 57.0546 11.2375 53.3599 7.0609 48.0529C2.88428 42.7458 0.677022 36.1547 0.815225 29.4026C0.953429 22.6506 3.42854 16.1553 7.81883 11.0236C12.2091 5.89188 18.2429 2.44118 24.8922 1.25946C31.5415 0.0777505 38.3948 1.23814 44.2844 4.54292C50.1741 7.8477 54.7356 13.0924 57.1918 19.3834L57.9455 19.0891Z"
+                                    fill="#222222" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="partner">
+            <div class="partner__container container">
+                <h2>Open Opportunities To
+                    Become a Wholesale Partner</h2>
+                <p class="text-large">
+                    Partner with Aurora Coffee to bring specialty, premium-quality coffee to your café or business. Join
+                    us and grow with our exclusive blends crafted for the best coffee experience
+                </p>
+                <button class="btn-cta" data-modal="modal_cta">
+                    <span class="text-medium">Join Now</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer__container container">
+            <div class="update">
+                <div class="update__container">
+                    <div class="update__main">
+                        <form id="form-mail" action="" method="">
+                            <input type="text" name="email" class="text-large" placeholder="Enter Your Email" />
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#B6B6B6" />
+                                    <path
+                                        d="M29.8678 19.7043L25.3225 15.1589C25.1592 14.9682 24.8722 14.946 24.6816 15.1093C24.4909 15.2726 24.4687 15.5595 24.632 15.7502C24.6472 15.768 24.6638 15.7846 24.6816 15.7998L28.4497 19.5724H10.4545C10.2035 19.5724 10 19.776 10 20.027C10 20.2781 10.2035 20.4815 10.4545 20.4815H28.4497L24.6816 24.2496C24.4909 24.4129 24.4687 24.6999 24.632 24.8905C24.7953 25.0812 25.0822 25.1034 25.2729 24.9401C25.2907 24.9248 25.3073 24.9083 25.3225 24.8905L29.8678 20.3451C30.0441 20.1679 30.0441 19.8816 29.8678 19.7043Z"
+                                        fill="#B6B6B6" />
+                                </svg>
+                            </button>
+                        </form>
+
+                        <p class="update__txt text-medium">
+                            Join our newsletter to receive the latest design insights and
+                            innovative solutions directly to your inbox. We’re committed to
+                            offering high-quality design tips and updates to keep you inspired
+                        </p>
+                    </div>
+
+                    <div class="update__right">
+                        <a href="#">
+                            <img src="./assets/img/logo.svg" alt="">
+                        </a>
+
+                        <div class="social social--update">
+                            <a href="#" class="social-item">
+                                <img src="./assets/img/social/x.svg" alt="x icon" />
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="./assets/img/social/facebook.svg" alt="facebook icon" />
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="./assets/img/social/youtube.svg" alt="youtube icon" />
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="./assets/img/social/instagram.svg" alt="instagram icon" />
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="footer__main">
+                <nav class="footer__nav">
+                    <ul class="footer__list text-small">
+                        <li class="footer__item"><a href="">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+
+                <p class="footer__txt text-medium">
+                    © 2024 RELIABLE INSURANCE. All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="text-small">
+                    Developed by
+                    <a href="https://garno.tech/" target="_blank">GARNO.TECH</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- modal -->
+    <div class="modal modal--cta">
+        <div class="modal-inner">
+            <div class="modal__header">
+                <h2>Contact us</h2>
+                <button class="btn__modal-close">
+                    <img src="./assets/img/close.svg" alt="close icon" />
+                </button>
+            </div>
+
+            <div class="modal--cta__main">
+                <div class="modal__contact">
+                    <div class="social social--modal">
+                        <a href="#" class="social-item">
+                            <img src="./assets/img/social/x.svg" alt="x icon" />
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="./assets/img/social/facebook.svg" alt="facebook icon" />
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="./assets/img/social/instagram.svg" alt="instagram icon" />
+                        </a>
+                    </div>
+
+                    <div class="modal__contact-list text-large">
+                        <div class="modal__contact-item">
+                            <img src="./assets/img/contact/location.svg" alt="location icon" />
+                            <span>Unit 12, Al Habtoor Business Tower,Dubai Marina, Dubai,
+                                UAE</span>
+                        </div>
+                        <div class="modal__contact-item">
+                            <img src="./assets/img/contact/mail.svg" alt="mail icon" />
+                            <span>office@GreenArchDXB.com</span>
+                        </div>
+                        <div class="modal__contact-item">
+                            <img src="./assets/img/contact/phone.svg" alt="phone icon" />
+                            <span>+971 4 567 8901</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__form-wrapper">
+                    <form action="" id="form-modal" class="modal__form">
+                        <div class="form__field">
+                            <span class="form__field-title text-medium">Your name</span>
+                            <input type="text" name="name" class="text-medium" />
+                        </div>
+                        <div class="form__field">
+                            <span class="form__field-title text-medium">Phone</span>
+                            <input type="text" name="phone" class="text-medium" />
+                        </div>
+                        <div class="form__field">
+                            <span class="form__field-title text-medium">Message</span>
+                            <textarea name="message" id="" cols="30" rows="10" class="text-medium"></textarea>
+                        </div>
+
+                        <button class="btn-cta">
+                            <span class="text-medium">Send</span>
+                            <img src="./assets/img/arrow.svg" alt="arrow icon" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

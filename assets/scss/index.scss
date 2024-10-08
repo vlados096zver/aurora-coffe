@@ -1,0 +1,517 @@
+@import './header';
+@import './global';
+@import './footer';
+@import './modal';
+
+// hero
+.hero__container {
+    margin: 60px;
+    margin-bottom: 0;
+    height: 1250px;
+    background-image: url(../img/background.webp);
+    background-size: cover;
+
+    padding-top: 330px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    h1 {
+        margin-top: 120px;
+    }
+
+    p {
+        margin-top: 70px;
+        max-width: 1200px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &.text-xxlarge {
+            font-size: 40px;
+        }
+    }
+
+
+}
+
+
+.hero__pretitle {
+    max-width: 1040px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        text-transform: uppercase;
+    }
+
+
+    &::before,
+    &::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #ffffff8d;
+        margin: 0 40px;
+    }
+
+}
+
+.hero__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+
+
+    img {
+        display: flex;
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: blink-animation 2s infinite;
+
+        width: 90px;
+        height: 90px;
+    }
+}
+
+// cafe-intro
+
+
+.cafe-intro {
+    padding-bottom: 150px;
+
+    .cafe-intro__container {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    h2 {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 90px
+    }
+
+    p {
+        max-width: 900px;
+        margin-left: auto;
+        text-align: right;
+
+
+        line-height: 36px;
+    }
+}
+
+
+
+// photo
+
+.photo {
+    .photo__container {
+        img {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+// product
+
+.product-section {
+    padding: 130px 0 180px;
+}
+
+.product__header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #222;
+
+    * {}
+
+    h2 {
+        font-size: 128px;
+        font-weight: 900;
+    }
+
+    p {
+        line-height: 36px;
+        max-width: 988px;
+    }
+}
+
+.product__header-filters {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    button {
+
+
+        &.btn-cta--active {
+            background: #222;
+
+            span {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.product__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 70px;
+
+    margin-top: 70px;
+}
+
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    p {
+
+        line-height: 36px;
+    }
+}
+
+.product__photo {
+    background: #F4F4F4;
+    height: 614px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+// coffe
+
+.coffee-offers {
+    padding: 60px 0;
+    background: #F4F4F4;
+}
+
+
+.coffee-offers__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.coffee-offers__photo {
+    width: 880px;
+}
+
+.coffee-offers__description {
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 110px;
+
+    max-width: 775px;
+
+
+    h2 {
+        font-size: 96px;
+        font-weight: 300;
+        line-height: 120px;
+    }
+
+}
+
+
+.coffee-offers__category {
+    color: #B0B0B0;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 16.8px;
+}
+
+.coffee-offers__subtitle {
+    line-height: 48px;
+}
+
+
+// review
+
+.review {
+    padding: 60px 0;
+}
+
+.review__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.swiper.review__slider {
+    border-radius: 50px;
+    background: #F4F4F4;
+    padding: 90px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 70px;
+        text-align: center;
+
+        h2 {
+            font-weight: 900;
+            margin-top: 70px;
+        }
+    }
+}
+
+.review__rating {
+    display: flex;
+    gap: 20px;
+}
+
+.review__author {
+    margin-top: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review__author-location {
+    color: #D0D0D0;
+}
+
+.review__slider-btns {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.review__text {
+    margin-top: 67px;
+    line-height: 36px;
+}
+
+.review-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.review__photo {
+    img {
+        width: 100%;
+    }
+}
+
+// partner
+
+
+.partner {
+    background: #535353;
+    padding: 100px 0 80px;
+    color: #fff;
+
+    h2 {
+        font-weight: 900;
+        line-height: 96px;
+        max-width: 915px;
+    }
+
+    p {
+        margin-top: 100px;
+        line-height: 48px;
+        max-width: 1200px;
+    }
+
+    .btn-cta {
+        margin-top: 60px;
+        background-color: #fff;
+
+        span {
+            color: #222;
+        }
+
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .hero__container {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    // 
+    .product__header h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 1280px) {
+    // coffee offers
+
+    .coffee-offers__item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coffee-offers__description {
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+
+
+    // 
+    .product__list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+
+    // 
+    .coffee-offers__description h2 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    // 
+
+    .review__container {
+        grid-template-columns: 100%;
+    }
+
+    .swiper.review__slider .swiper-slide {
+        padding: 0 20px;
+
+
+        h2,
+        .review__author,
+        .review__text {
+            margin-top: 30px;
+        }
+    }
+
+    .review__rating {
+        img {
+            height: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 980px) {
+    .hero__container {
+        padding-top: 150px;
+        height: 980px;
+        h1{
+            margin-top: 80px;
+        }
+    }
+
+    .hero__bottom {
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
+    .hero__pretitle {
+        &::before,
+        &::after {
+            margin: 0 20px;
+        }
+    
+    }
+
+    // 
+
+    .cafe-intro {
+        h2 {
+            line-height: 60px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    //
+    .product__header h2 {
+        font-size: 30px;
+    }
+
+
+    .product__item {
+        gap: 20px;
+    }
+
+    .hero__container p.text-xxlarge {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .product__header-filters {
+        gap: 15px;
+    }
+
+    //
+
+    .partner {
+        h2 {
+            text-align: center;
+            line-height: 60px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+    .partner__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // 
+
+    .coffee-offers__category{
+        letter-spacing: 12px;
+    }
+}
+
+@media (max-width: 720px) {
+    .product__list {
+        grid-template-columns: 100%;
+    }
+
+}
