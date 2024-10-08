@@ -191,3 +191,9 @@ filterBtn.forEach(item => {
         item.classList.add('btn-cta--active');
     });
 });
+
+window.addEventListener("load", function () {
+  AOS.init({
+    duration: 600,
+  })
+})
