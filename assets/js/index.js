@@ -189,6 +189,7 @@ filterBtn.forEach(item => {
 
         filterBtn.forEach(btn => btn.classList.remove('btn-cta--active'));
         item.classList.add('btn-cta--active');
+        AOS.refresh();
     });
 });
 
